@@ -33,7 +33,7 @@ Navigate to generated api file's folder
 
 Run the docker mounting current directory
 ```
-docker run --network=host -v "$(pwd)/:/zap/wrk/" owasp/zap2docker-stable python3 zap-api-gen.py -t zap_openapi.json -f openapi -r report.html
+docker run --network=host -v "$(pwd)/:/zap/wrk/" owasp/zap2docker-stable python3 zap-api-scan.py -t zap_openapi.json -f openapi -r report.html
 ```
 Output
 ```
