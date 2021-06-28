@@ -1,5 +1,5 @@
 # OWASP-ZAP
-Perform an api scan on a REST API defined web application.
+Perform an api scan on a REST API defined web application through OpenAPI 3.0.
 # zapGenAPI
 Generates an OpenAPI 3.0 json file with input server url specification
 
