@@ -18,7 +18,7 @@ optional arguments:
   
   
 Example
-python3 zapGenAPI.py -f openAPI.yaml -u http://127.0.0.1:8080
+python3 zapGenAPI.py -f ~/openapi/openAPI.yaml -u http://127.0.0.1:8080
 ```
 Output
 ```
