@@ -7,7 +7,7 @@ Requirements
 ```
 pip install pyyaml
 ```
-
+Usage
 ```
 python3 zapGenAPI.py [-h] -f  -u
 
