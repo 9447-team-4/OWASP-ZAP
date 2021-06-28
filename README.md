@@ -1,11 +1,5 @@
 # OWASP-ZAP
 Perform an api scan on a REST API defined web application.
-
-Requirements
-```
-python
-docker
-```
 # zapGenAPI
 Generates an OpenAPI 3.0 json file with input server url specification
 
