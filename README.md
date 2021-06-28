@@ -13,3 +13,21 @@ optional arguments:
 Example
 python3 zapGenAPI.py -f openAPI.yaml -u http://127.0.0.1:8080
 ```
+Output
+```
+zap_openapi.json
+```
+# Zed Attack Proxy (ZAP)
+Pull docker image
+```
+docker pull owasp/zap2docker-stable
+```
+Navigate to generated api file's folder
+Run the docker mounting current directory
+```
+docker run --network=host -v "$(pwd)/:/zap/wrk/" owasp/zap2docker-stable python3 zap-api-gen.py -t zap_openapi.json -f openapi -r report.html
+```
+Output
+```
+report.html
+```
