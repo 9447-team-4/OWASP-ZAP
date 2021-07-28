@@ -24,8 +24,25 @@ Output
 ```
 zap_openapi.json
 ```
+
+---
+
+```
+usage: FuzzReportUpload.py [-h] -H  -J
+
+Uploads the ZAP html and json reports to S3 bucket
+
+optional arguments:
+  -h, --help    show this help message and exit
+  -H , --html   Report html file
+  -J , --json   Report json file
+
 # Zed Attack Proxy (ZAP)
 Pull docker image
+```
+
+---
+
 ```
 docker pull owasp/zap2docker-stable
 ```
