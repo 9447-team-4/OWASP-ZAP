@@ -73,3 +73,21 @@ python3 -H report.html -J report.json
 ```
 ### Output
 A new AWS S3 Bucket called `YOUR_S3_BUCKET_NAME`. Inside are two files, `report.html`, `report.json`
+
+# Docker usage
+Run the scripts inside a docker container
+
+Our existing image
+```
+docker pull soterias/owasp-generator
+```
+Or build your own image with the Dockerfile
+```
+docker build -t IMAGE_NAME .
+```
+### Usage
+```
+docker run soterias/owasp-generator generate -f /path/to/openapi -u SERVER_URL
+
+docker run soterias/owasp-generaotr upload -H /path/to/report.html -J /path/to/report.json
+```
