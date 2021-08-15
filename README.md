@@ -7,7 +7,7 @@ Upload the results to an AWS S3 Bucket.
 ```
 pip install -r requirements.txt
 ```
-## .env
+### .env
 ```
 AWS_ACCESS_KEY_ID=YOUR-AWS-ACCESS-KEY
 AWS_SECRET_ACCESS_KEY=YOUR-AWS-SECRET-ACCESS-KEY
@@ -16,7 +16,7 @@ S3_BUCKET_REGION=YOUR-S3-BUCKET-REGION
 ```
 # zapGenAPI
 Generates an OpenAPI 3.0 json file with input server url specification
-## Usage
+### Usage
 ```
 python3 zapGenAPI.py [-h] -f  -u
 
@@ -26,11 +26,11 @@ optional arguments:
   -u , --url    url of server
 ```
   
-## Example
+### Example
 ```
 python3 zapGenAPI.py -f ~/openapi/openAPI.yaml -u http://127.0.0.1:8080
 ```
-## Output
+### Output
 ```
 zap_openapi.json
 ```
@@ -48,7 +48,7 @@ Run the docker mounting current directory
 ```
 docker run --network=host -v "$(pwd)/:/zap/wrk/" owasp/zap2docker-stable python3 zap-api-scan.py -t zap_openapi.json -f openapi -r report.html -J report.json
 ```
-## Output
+### Output
 ```
 report.html
 report.json
@@ -56,7 +56,7 @@ report.json
 # FuzzReportUpload
 Upload your OWASP ZAP reports to an AWS S3 bucket.
 
-## Usage
+### Usage
 ```
 python3 FuzzReportUpload.py [-h] -H  -J
 
@@ -67,9 +67,9 @@ optional arguments:
   -H , --html   Report html file
   -J , --json   Report json file
 ```
-## Example
+### Example
 ```
 python3 -H report.html -J report.json
 ```
-## Output
+### Output
 A new AWS S3 Bucket called `YOUR_S3_BUCKET_NAME`. Inside are two files, `report.html`, `report.json`
